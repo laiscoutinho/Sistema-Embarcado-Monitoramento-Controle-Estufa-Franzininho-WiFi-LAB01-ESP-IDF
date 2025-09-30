@@ -89,6 +89,41 @@ O sistema é capaz de:
 
 ---
 
+## 📊 Estrutura modular (Software)
+
+```
+projeto/
+│
+├─ components/
+│   ├─ dht11_driver/
+│   │   ├─ dht11.c
+│   │   └─ dht11.h
+│   ├─ ldr_driver/
+│   │   ├─ ldr.c
+│   │   └─ ldr.h
+│   ├─ oled_driver/
+│   │   ├─ oled.c
+│   │   └─ oled.h
+│   ├─ control/
+│   │   ├─ control.c
+│   │   └─ control.h
+│   ├─ storage/
+│   │   ├─ storage.c
+│   │   └─ storage.h
+│   └─ serial/
+│       ├─ serial.c
+│       └─ serial.h
+│
+├─ main/
+│   └─ main.c
+│
+├─ sdkconfig
+├─ CMakeLists.txt
+└─ README.md
+
+```
+---
+
 ## 🚀 Como Executar
 
 ```bash

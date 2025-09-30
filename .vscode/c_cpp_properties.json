@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:IDF_PATH}/components/**",
+                "${env:IDF_PATH}/components/freertos/FreeRTOS-Kernel/include",
+                "${env:IDF_PATH}/components/freertos/esp_additions/include",
+                "${env:IDF_PATH}/components/driver/include",
+                "${env:IDF_PATH}/components/hal/include",
+                "${env:IDF_PATH}/components/esp_system/include",
+                "${env:IDF_PATH}/components/esp_common/include"
+            ],
+            "defines": [
+                "ESP_PLATFORM",
+                "IDF_VER=\"v5.1.2\""
+            ],
+            "compilerPath": "/home/laisdev/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
