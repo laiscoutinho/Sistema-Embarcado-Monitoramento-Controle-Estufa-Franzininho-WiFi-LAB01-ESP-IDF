@@ -91,25 +91,23 @@ O sistema é capaz de:
 
 ## 🚀 Como Executar
 
-### 🔧 Pré-requisitos
-
-* [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html) configurado.
-* Dependências instaladas para display OLED e sensores.
-
-### ▶️ Instalação
-
 ```bash
 # Clone o repositório
 git clone https://github.com/laiscoutinho/Sistema-Embarcado-Monitoramento-Controle-Estufa-Franzininho-WiFi-LAB01-ESP-IDF.git
 cd Sistema-Embarcado-Monitoramento-Controle-Estufa-Franzininho-WiFi-LAB01-ESP-IDF
 
-# Configure o projeto
-idf.py menuconfig
+# Rode o script de setup:
+./setup.sh
 
-# Compile e grave no ESP32
+# Abra um novo terminal (ou rode source ~/esp/esp-idf/export.sh) para ativar o ESP-IDF.
+# Compile e rode:
+idf.py set-target esp32
 idf.py build
-idf.py flash
-idf.py monitor
+idf.py -p /dev/ttyUSB0 flash monitor
+
+# No terminal no diretorio do seu projeto, rode:
+idf.py set-target esp32
+
 ```
 
 ---
